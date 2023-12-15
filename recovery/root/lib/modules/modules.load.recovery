@@ -53,7 +53,6 @@ mtk-mmdvfs.ko
 mtk-mmdvfs-debug.ko
 mmqos-common.ko
 mmqos-mt6895.ko
-mmqos_wrapper.ko
 iommu_secure.ko
 iommu_debug.ko
 mtk_iommu.ko
@@ -82,7 +81,6 @@ usb_dp_selector.ko
 mt6368-regulator.ko
 mtk-spmi-pmic-adc.ko
 regmap-spmi.ko
-mtk-spmi-pmic-debug.ko
 cqhci.ko
 mtk-mmc-autok.ko
 mtk-mmc-dbg.ko
@@ -107,7 +105,6 @@ rtc-mt6685.ko
 spi-mt65xx.ko
 mt6375.ko
 extdev_io_class.ko
-mt6375-dbg.ko
 rt5133-regulator.ko
 rt6160-regulator.ko
 mt6685-core.ko
@@ -178,8 +175,6 @@ uload_ind.ko
 load_track.ko
 sec.ko
 mtk-socinfo.ko
-bus_tracer_v1.ko
-bus_tracer_interface.ko
 emi-mpu-hook-v1.ko
 double_click.ko
 xiaomi_touch.ko
@@ -240,7 +235,6 @@ mtk-mmdvfs.ko
 mtk-mmdvfs-debug.ko
 mmqos-common.ko
 mmqos-mt6895.ko
-mmqos_wrapper.ko
 iommu_secure.ko
 iommu_debug.ko
 mtk_iommu.ko
@@ -269,7 +263,6 @@ usb_dp_selector.ko
 mt6368-regulator.ko
 mtk-spmi-pmic-adc.ko
 regmap-spmi.ko
-mtk-spmi-pmic-debug.ko
 cqhci.ko
 mtk-mmc-autok.ko
 mtk-mmc-dbg.ko
@@ -294,7 +287,6 @@ rtc-mt6685.ko
 spi-mt65xx.ko
 mt6375.ko
 extdev_io_class.ko
-mt6375-dbg.ko
 rt5133-regulator.ko
 rt6160-regulator.ko
 mt6685-core.ko
@@ -365,8 +357,6 @@ uload_ind.ko
 load_track.ko
 sec.ko
 mtk-socinfo.ko
-bus_tracer_v1.ko
-bus_tracer_interface.ko
 emi-mpu-hook-v1.ko
 double_click.ko
 xiaomi_touch.ko

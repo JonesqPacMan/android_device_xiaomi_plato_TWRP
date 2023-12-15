@@ -67,8 +67,6 @@ alias of:N*T*Cmediatek,mt8183-i2c i2c_mt65xx
 alias of:N*T*Cmediatek,mt8183-i2cC* i2c_mt65xx
 alias of:N*T*Cmediatek,mt8192-i2c i2c_mt65xx
 alias of:N*T*Cmediatek,mt8192-i2cC* i2c_mt65xx
-alias of:N*T*Cmediatek,spmi-pmic-debug mtk_spmi_pmic_debug
-alias of:N*T*Cmediatek,spmi-pmic-debugC* mtk_spmi_pmic_debug
 alias of:N*T*Cgoodix,gt9897 goodix_core
 alias of:N*T*Cgoodix,gt9897C* goodix_core
 alias of:N*T*Cgoodix,gt9966 goodix_core
@@ -83,9 +81,6 @@ alias of:N*T*Cmediatek,mt6375-battery_oc_throttling mtk_battery_oc_throttling
 alias of:N*T*Cmediatek,mt6375-battery_oc_throttlingC* mtk_battery_oc_throttling
 alias of:N*T*Crichtek,rt5133 rt5133_regulator
 alias of:N*T*Crichtek,rt5133C* rt5133_regulator
-alias platform:mt6375-dbg mt6375_dbg
-alias of:N*T*Cmediatek,mt6375-dbg mt6375_dbg
-alias of:N*T*Cmediatek,mt6375-dbgC* mt6375_dbg
 alias of:N*T*Cmediatek,mt8173-mtu3 mtu3
 alias of:N*T*Cmediatek,mt8173-mtu3C* mtu3
 alias of:N*T*Cmediatek,mtu3 mtu3
@@ -761,8 +756,6 @@ alias of:N*T*Cmediatek,mt6879-mml_wrot mtk_mml
 alias of:N*T*Cmediatek,mt6879-mml_wrotC* mtk_mml
 alias of:N*T*Cmediatek,mt6895-mml_wrot mtk_mml
 alias of:N*T*Cmediatek,mt6895-mml_wrotC* mtk_mml
-alias of:N*T*Cmediatek,mml-test mtk_mml
-alias of:N*T*Cmediatek,mml-testC* mtk_mml
 alias of:N*T*Crichtek,rt6160 rt6160_regulator
 alias of:N*T*Crichtek,rt6160C* rt6160_regulator
 alias of:N*T*Cmediatek,charger,pd mtk_pd_charging
