@@ -47,7 +47,7 @@ repo sync -j$(nproc --all)
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/plato" name="JonesqPacMan/android_device_xiaomi_plato-TWRP" remote="github" revision="TWRP-12.1_A14" />
+<project path="device/xiaomi/plato" name="JonesqPacMan/android_device_xiaomi_plato_TWRP" remote="github" revision="TWRP-12.1_A14" />
 ```
 
 Finally execute these:
