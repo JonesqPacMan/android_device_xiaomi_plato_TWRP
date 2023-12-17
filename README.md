@@ -47,7 +47,7 @@ repo sync -j$(nproc --all)
 Then add these projects to .repo/manifest.xml:
 
 ```xml
-<project path="device/xiaomi/plato" name="JonesqPacMan/android_device_xiaomi_plato" remote="github" revision="TWRP-12.1_A12" />
+<project path="device/xiaomi/plato" name="JonesqPacMan/android_device_xiaomi_plato-TWRP" remote="github" revision="TWRP-12.1_A12" />
 ```
 
 Finally execute these:
@@ -61,5 +61,5 @@ mka vendorbootimage -j$(nproc --all)
 ## To use it:
 
 ```
-fastboot flash vendor_boot out/target/product/plato/vendor_boot.img
+fastboot flash vendor_boot twrp-3.7.0-12.1_A12-vendor_boot-plato.img
 ```
