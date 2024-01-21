@@ -1,3 +1,6 @@
+# Dynamic Partitions
+ro.boot.dynamic_partitions=true
+
 # Fstab
 ro.postinstall.fstab.prefix=/system
 
@@ -16,3 +19,7 @@ ro.vendor.mediatek.platform=MT6895
 
 # Gatekeeper
 ro.hardware.gatekeeper=beanpod
+
+# Timezone
+persist.sys.timezone="Asia/Jakarta"
+
