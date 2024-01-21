@@ -1,4 +1,5 @@
 import /microtrust.rc
+import /xiaomi.haptic.hal.rc
 
 on init
     setprop sys.usb.configfs 1
@@ -91,6 +92,27 @@ service vendor.keymint-beanpod /vendor/bin/hw/android.hardware.security.keymint@
     user nobody
     seclabel u:r:recovery:s0
 
+service set_permissive /system/bin/set_permissive.sh
+    user root
+    group root
+    disabled
+    oneshot 
+    seclabel u:r:recovery:s0
+    
+ service overrideprops /system/bin/overrideprops.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+    
+service haptic_hal /system/bin/haptic_hal.sh
+    user root
+    group root
+    disabled
+    oneshot
+    seclabel u:r:recovery:s0
+
 on property:crypto.ready=1
     start vendor.keymint-beanpod
 
@@ -119,8 +141,10 @@ on property:crypto.ready=0
     stop vendor.gatekeeper-1-0
 
 on property:twrp.modules.loaded=true
-    start vibratorfeature-hal-service
+    start haptic_hal
 
 on boot
     start health-hal-2-1
+    start set_permissive
+    start overrideprops
     setprop sys.usb.config adb
