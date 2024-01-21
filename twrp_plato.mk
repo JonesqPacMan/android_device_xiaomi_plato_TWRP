@@ -35,6 +35,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 # Device specific configs
 $(call inherit-product, device/xiaomi/plato/device.mk)
 
+# Configure virtual_ab_ota.mk
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 # Device identifier
 PRODUCT_DEVICE := plato
 PRODUCT_NAME := twrp_plato
@@ -43,5 +46,7 @@ PRODUCT_MODEL := 22071212AG
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_RELEASE_NAME := Xiaomi 12T
 
-# Hide Reflash TWRP
-PRODUCT_PROPERTY_OVERRIDES += ro.twrp.vendor_boot=true
+# Hide Reflash TWRP & FUSE passthrough
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.twrp.vendor_boot=true \
+    persist.sys.fuse.passthrough.enable=true
